@@ -1,0 +1,33 @@
+# GitHub Pages Redirect Configuration
+# This is a minimal Jekyll site that redirects all traffic to ariashaw.com
+
+# Site settings
+title: "Site Moved to ariashaw.com"
+description: "This site has permanently moved to ariashaw.com"
+url: "https://ariashaw.github.io"
+baseurl: ""
+
+# Disable all plugins to keep the site minimal
+plugins: []
+
+# Exclude unnecessary files
+exclude:
+  - README.md
+  - .git
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Permalink structure (not really used since we're redirecting everything)
+permalink: none
+
+# Disable Jekyll's default processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Disable feed generation
+feed:
+  disable: true
